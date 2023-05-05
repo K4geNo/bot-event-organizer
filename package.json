@@ -1,0 +1,22 @@
+{
+    "name": "bot-event-organizer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsx watch index.js",
+        "build:command": "tsx deploy-commands.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^14.10.2",
+        "dotenv": "^16.0.3"
+    },
+    "devDependencies": {
+        "dayjs": "^1.11.7",
+        "eslint": "^8.39.0",
+        "tsx": "^3.12.7"
+    }
+}
