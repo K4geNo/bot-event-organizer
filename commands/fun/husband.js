@@ -105,15 +105,18 @@ module.exports = {
         let voteQuantityHusbandOne = 0
         let voteQuantityHusbandTwo = 0
 
+        const extractNameOne = inputOne.split(' - ')[0]
+        const extractNameTwo = inputTwo.split(' - ')[0]
+
         const voteOne = new ButtonBuilder()
             .setCustomId('voteOne')
-            .setLabel(inputOne)
+            .setLabel(extractNameOne)
             .setStyle(ButtonStyle.Secondary)
             .setEmoji('🔵')
 
         const voteTwo = new ButtonBuilder()
             .setCustomId('voteTwo')
-            .setLabel(inputTwo)
+            .setLabel(extractNameTwo)
             .setStyle(ButtonStyle.Secondary)
             .setEmoji('🔴')
 
